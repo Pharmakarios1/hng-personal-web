@@ -27,7 +27,7 @@ body{
     min-height: 100vh;
 }
 header{
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
     position: sticky;
     top: 0;
     display: flex;
@@ -133,17 +133,19 @@ main{
     display: flex;
     height: 80vh;
     flex-direction: column; 
+    align-items: center;
 }
 
 .main-content-wrapper{
     background: linear-gradient(to bottom, rgb(241, 233, 242), var(--primary-color));
-    padding: 2rem 4rem 0;
+    padding: 2rem 2rem 0;
     border-bottom-left-radius: 40px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .wrapper-border{
-    padding: 0rem 4rem;
+    padding: 0rem 2rem;
     border-bottom-left-radius: 40px;
     display: flex;
     justify-content: space-between;
@@ -392,13 +394,14 @@ footer ul li a{
 
  /* Mobile at 600max */
 @media (max-width: 600px) {
+
     .menu .mobile-menu i{
         display: block;
     }
     .menu .side-menu{
         position: absolute;
         top: 2rem;
-        right: 0rem;
+        right: -1rem;
     }
     nav{
         background-color:var(--secondary-color);
@@ -430,7 +433,7 @@ footer ul li a{
         border-left: 4px solid var(--secondary-color);
     }
     .main-content-wrapper{
-        padding: 2rem 2rem 0;
+        padding: 2rem 1rem 0;
     }
     main .profile-description{
         width: 100%;
@@ -471,14 +474,14 @@ footer ul li a{
 .goal-one{
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(100%, 15em)) ;
-    gap: 1rem;
+    gap: 3rem;
     margin-bottom: 2rem;
     
 }
 .goal-two{
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(100%, 15em)) ;
-    gap: 1rem;
+    gap: 3rem;
     margin-bottom: 2rem;
     
 }
