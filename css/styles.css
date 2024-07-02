@@ -397,11 +397,12 @@ footer ul li a{
 
     .menu .mobile-menu i{
         display: block;
+        margin-right: 2rem;
     }
     .menu .side-menu{
         position: absolute;
         top: 2rem;
-        right: -1rem;
+        right: 1rem;
     }
     nav{
         background-color:var(--secondary-color);
@@ -497,6 +498,7 @@ footer .links{
 @media (min-width: 601px) and (max-width:768px) {
     .menu .mobile-menu i{
         display: block;
+        margin-right: 2rem;
     }
     .menu .side-menu{
         position: absolute;
