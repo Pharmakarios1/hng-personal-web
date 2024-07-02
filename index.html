@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blessed Akhigbe hng personal website" />
+    <meta
+      name="keywords"
+      content="Blessed Akhigbe,Pharmakarios,Software Developer,Frontend Developer,Linux system administrator, Database administrator, ReactJs, NodeJs"
+    />
+    <title>Blessed Akhigbe personal Website</title>
+    <!-- css styling -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome personal kits -->
+    <script
+      src="https://kit.fontawesome.com/eaab1623f5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- content Wrapper -->
+    <div class="container">
+      <!-- Header -->
+      <header data-testid="header">
+        <div class="logo">
+          <img
+            src="./assets/logo_40.png"
+            width="40px"
+            height="40px"
+            alt="blessed-logo"
+          />
+          <p>Kairos</p>
+        </div>
+        <nav data-testid="navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#goal">Goals</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu" data-testid="side-menu-toggle">
+          <img
+            src="./assets/menu_40.png"
+            width="40px"
+            height="40px"
+            class="side-menu"
+            alt=""
+          />
+          <div class="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </header>
+      <!-- Side Menu -->
+      <div class="side-menu display-table" data-testid="side-bar">
+        <div class="side-menu-container">
+          <!-- Intro side -->
+          <div class="about-side">
+            <div class="about-side-head">
+              <h2>Blessed Akhigbe</h2>
+              <i class="fa-solid fa-close"></i>
+            </div>
+            <p>
+              I Have A Passion For Creating Challenging, Intuitive And
+              Problem-solving Products, I'm a highly-motivated, productive and
+              client-focused team player with good communication, interpersonal,
+              organizational and time management skills.
+            </p>
+          </div>
+
+          <!-- contact us -->
+          <div class="contact-side">
+            <h6>Contact Me</h6>
+            <div class="single-contact">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <div class="info-cont">
+                <p>Benin - Nigeria</p>
+              </div>
+            </div>
+
+            <div class="single-contact">
+              <span><i class="fa fa-envelope"></i></span>
+              <div class="info-cont">
+                <p>akhigbeblessed@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="single-contact">
+              <span><i class="fa fa-phone"></i></span>
+              <div class="info-cont">
+                <p>(+234) 8060514714</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- follow us -->
+          <div class="follow-us">
+            <h6>Follow Me</h6>
+            <!-- List Icons Social Media-->
+            <ul class="social-media">
+              <li>
+                <a
+                  href="https://web.facebook.com/akhigbe.blessed"
+                  class="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Pharmakarios_1" class="twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/Pharmakarios_1"
+                  class="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/Pharmakarios1" class="github"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/blessed-akhigbe-968509b6/"
+                  class="linkedin"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Main -->
+      <main>
+        <!-- profile desc -->
+        <section
+          class="main-content-wrapper"
+          id="about"
+          data-testid="main-content"
+        >
+          <div class="wrapper-border">
+            <div class="profile-description">
+              <ul>
+                <li>Frontend Engineer</li>
+                <li>DevOps Engineer</li>
+                <li>Pharmacist</li>
+              </ul>
+              <h1>Hello, I'm <span>Blessed Akhigbe!</span></h1>
+              <h2>Enthusiastic software developer interning at HNG</h2>
+              <p>
+                I am a passionate and dedicated software developer with a
+                profound understanding of web technologies. I have a keen eye
+                for design and a strong foundation in coding languages. I am
+                currently working interning as a Frontend engineer at
+                <a href=" hng.tech/learn" data-testid="hngLink">HNG</a>.
+              </p>
+              <button id="goal">Goals</button>
+            </div>
+            <!-- profile img -->
+            <div class="profile_img" data-testid="profile-image">
+              <img
+                src="./assets/blessed_img_400.png"
+                width="400"
+                height="400"
+                data-testid="profileImage"
+                alt="profile-img"
+              />
+            </div>
+          </div>
+        </section>
+        <!-- Goals -->
+        <section class="goal" id="goal" data-testid="goal-section">
+          <!-- Goal Header -->
+          <h2>Goals</h2>
+          <p class="goal-subheader">First year</p>
+          <div class="goal-one">
+            <div class="cards">
+              <div class="card-heading">
+                <i class="fa-solid fa-gears"></i>
+                <h3 class="card-heading">Skill Enhancement</h3>
+              </div>
+
+              <ul>
+                <p>Deepen JavaScript Knowledge</p>
+                <li>
+                  Master advanced JavaScript concepts such as closures,
+                  prototypes, asynchronous programming, and design patterns.
+                </li>
+                <p>Learn TypeScript</p>
+                <li>
+                  Mastering TypeScript to write more robust and error-free code.
+                </li>
+                <p>Explore Backend Development</p>
+                <li>
+                  Gain a basic understanding of backend technologies such as
+                  Node.js, Express, and databases like MongoDB or PostgreSQL.
+                </li>
+              </ul>
+            </div>
+            <div class="cards">
+              <div class="card-heading">
+                <i class="fa-solid fa-certificate"></i>
+                <h3 class="card-heading">Adding More Certifications</h3>
+              </div>
+
+              <ul>
+                <p>Obtain More Certicfication</p>
+                <li>
+                  Earn relevant certifications in web development, such as the
+                  React certification from Facebook or a JavaScript
+                  certification from an established platform
+                </li>
+                <p>Projects</p>
+                <li>
+                  Build Real-world Projects:* Create and deploy at least 3
+                  full-stack applications to your portfolio.
+                </li>
+                <p>Contribute to Open Source</p>
+                <li>
+                  Start contributing to open-source projects to gain experience
+                  and recognition.
+                </li>
+              </ul>
+            </div>
+            <div class="cards">
+              <div class="card-heading">
+                <i class="fa-solid fa-handshake"></i>
+                <h3 class="card-heading">Networking</h3>
+              </div>
+
+              <ul>
+                <p>Attend Meetuups and Conferences</p>
+                <li>
+                  Participate in local and online tech meetups, hackathons, and
+                  conferences to network with other professionals.
+                </li>
+                <p>Join Professional Communities</p>
+                <li>
+                  Be active on platforms like GitHub, Stack Overflow, and
+                  relevant subreddits.
+                </li>
+                <p>Participates in Spaces</p>
+                <li>Join relevant dev spaces on X and discord</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Goals for 2nd year -->
+          <p class="goal-subheader">Second year</p>
+          <div class="goal-two">
+            <div class="cards">
+              <div class="card-heading">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3 class="card-heading">Freelancing & Personal branding</h3>
+              </div>
+
+              <ul>
+                <p>Start Freelancing</p>
+                <li>
+                  Take on freelance projects to diversify my experience and
+                  income sources.
+                </li>
+                <p>Personal branding</p>
+
+                <li>
+                  Be active on professional social media platforms like LinkedIn
+                  and Twitter to build my personal brand, showcase my experience
+                  and projects.
+                </li>
+              </ul>
+            </div>
+            <div class="cards">
+              <div class="card-heading">
+                <i class="fa-solid fa-people-line"></i>
+                <h3 class="card-heading">Leadership and Mentoring</h3>
+              </div>
+
+              <ul>
+                <p>Lead a Project</p>
+                <li>
+                  Take the lead on a project on my job to develop leadership
+                  skills.
+                </li>
+                <p>Mentor Junior Developers</p>
+                <li>
+                  Start mentoring newcomers in the field to solidify my
+                  knowledge and give back to the community.
+                </li>
+              </ul>
+            </div>
+            <div class="cards">
+              <div class="card-heading">
+                <i class="fa-solid fa-book"></i>
+                <h3 class="card-heading">Advanced Learning</h3>
+              </div>
+
+              <ul>
+                <p>Explore New Frameworks</p>
+                <li>Learn a new front-end framework like Vue.js or Angular.</li>
+                <p>Mentor Junior Developers</p>
+                <li>
+                  Understand the basics of DevOps, including CI/CD, Docker, and
+                  Kubernetes, Project management like Kaban
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- Contact session -->
+        <section class="contact" id="contact" data-testid="contact-section">
+          <h2>Contact Me</h2>
+          <form>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+        <!-- Footer -->
+        <footer data-testid="footer-section">
+          <p>© 2024 Blessed Akhigbe. All rights reserved.</p>
+          <div class="links">
+            <a href="hng.tech/learn" data-testid="hng-link">HNG</a>
+            <a href="keyword.dog" data-testid="keyword-dog-link">Keyword Dog</a>
+            <a href="scrapeanyweb.site" data-testid="scrapeanyweb-link"
+              >Scrape Any Web</a
+            >
+          </div>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/blessedakhigbe"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/Pharmakarios_1"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/Pharmakarios_1"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/Pharmakarios1"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/blessed-akhigbe-5b42761a6/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </main>
+    </div>
+    <script src="../0x1_personal_website_hng/js/script.js"></script>
+  </body>
+</html>
