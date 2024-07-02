@@ -37,3 +37,35 @@ const toggleMobileMenu = () => {
 };
 
 navBar.addEventListener("click", toggleMobileMenu);
+
+// Curent time and Date in UTC
+const timeDate = document.querySelector("#current-time-date");
+
+// Function to update the current date and time in UTC
+function updateDateTime() {
+  const date = new Date();
+  const daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const dayOfWeek = daysOfWeek[date.getUTCDay()];
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, "0"); // Months are zero-based
+  const day = String(date.getUTCDate()).padStart(2, "0");
+  const hours = String(date.getUTCHours()).padStart(2, "0");
+  const minutes = String(date.getUTCMinutes()).padStart(2, "0");
+  const seconds = String(date.getUTCSeconds()).padStart(2, "0");
+
+  const currentDateTime = `${dayOfWeek}, ${year}-${month}-${day} ${hours}:${minutes}:${seconds} UTC`;
+  // Update the date and time in the HTML element
+  timeDate.innerText = currentDateTime;
+}
+
+// Update the date and time immediately and then every second
+updateDateTime();
+setInterval(updateDateTime, 1000);

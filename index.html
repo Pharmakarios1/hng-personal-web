@@ -73,7 +73,7 @@
           <!-- Intro side -->
           <div class="about-side">
             <div class="about-side-head">
-              <h2>Blessed Akhigbe</h2>
+              <h2 data-testid="slackDisplayName">Blessed Akhigbe</h2>
               <i class="fa-solid fa-close"></i>
             </div>
             <p>
@@ -97,7 +97,7 @@
             <div class="single-contact">
               <span><i class="fa fa-envelope"></i></span>
               <div class="info-cont">
-                <p>akhigbeblessed@gmail.com</p>
+                <p data-testid="slackEmail">akhigbeblessed@gmail.com</p>
               </div>
             </div>
 
@@ -164,7 +164,10 @@
                 <li>DevOps Engineer</li>
                 <li>Pharmacist</li>
               </ul>
-              <h1>Hello, I'm <span>Blessed Akhigbe!</span></h1>
+              <h1>
+                Hello, I'm
+                <span data-testid="slackDisplayName">Blessed Akhigbe!</span>
+              </h1>
               <h2>Enthusiastic software developer interning at HNG</h2>
               <p>
                 I am a passionate and dedicated software developer with a
@@ -176,12 +179,12 @@
               <button id="goal">Goals</button>
             </div>
             <!-- profile img -->
-            <div class="profile_img" data-testid="profile-image">
+            <div class="profile_img" data-testid="slackProfilePicture">
               <img
                 src="./assets/blessed_img_400.png"
                 width="400"
                 height="400"
-                data-testid="profileImage"
+                data-testid="slackProfilePicture"
                 alt="profile-img"
               />
             </div>
@@ -344,6 +347,10 @@
               >Scrape Any Web</a
             >
           </div>
+          <div
+            id="current-time-date"
+            data-testid="currentTimeUTC current-Day"
+          ></div>
           <ul>
             <li>
               <a href="https://www.facebook.com/blessedakhigbe"

@@ -379,8 +379,15 @@ footer .links a:last-child{
     border: none;
 }
 
+footer #current-time-date{
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
 footer ul {
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: flex;
     gap: 2rem;
     align-items: center;
