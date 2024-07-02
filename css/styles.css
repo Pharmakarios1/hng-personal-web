@@ -358,7 +358,7 @@ footer p{
 }
 footer .links{
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -366,7 +366,7 @@ footer .links a{
     color: var(--secondary-color);
     font-size: 18px;
     font-weight: 500;
-    padding-right: 3rem;
+    padding-right: 1rem;
     border-right: 1px solid var(--secondary-color);
 }
 
