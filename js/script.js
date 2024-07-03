@@ -69,3 +69,43 @@ function updateDateTime() {
 // Update the date and time immediately and then every second
 updateDateTime();
 setInterval(updateDateTime, 1000);
+
+// Animation
+
+document.addEventListener("DOMContentLoaded", () => {
+  const typedTextSpan = document.getElementById("typed-text");
+  const textArray = [
+    "Akhigbe Blessed",
+    "a Front-end developer",
+    "a DevOps Engr.",
+    "a Pharmacist",
+  ];
+  let textArrayIndex = 0,
+    charIndex = 0;
+
+  const type = () => {
+    if (charIndex < textArray[textArrayIndex].length) {
+      typedTextSpan.textContent += textArray[textArrayIndex].charAt(
+        charIndex++
+      );
+      setTimeout(type, 100);
+    } else {
+      setTimeout(erase, 2000);
+    }
+  };
+
+  const erase = () => {
+    if (charIndex > 0) {
+      typedTextSpan.textContent = textArray[textArrayIndex].substring(
+        0,
+        --charIndex
+      );
+      setTimeout(erase, 50);
+    } else {
+      textArrayIndex = (textArrayIndex + 1) % textArray.length;
+      setTimeout(type, 1100);
+    }
+  };
+
+  type();
+});

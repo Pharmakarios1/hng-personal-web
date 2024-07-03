@@ -27,14 +27,16 @@ body{
     min-height: 100vh;
 }
 header{
+    width: 100%;
     padding: 2rem 2rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background:var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
+    z-index: 9000;
 }
 
 
@@ -130,6 +132,7 @@ nav ul li a{
     font:bold;
 }
 main{
+    margin-top: 6rem;
     display: flex;
     height: 80vh;
     flex-direction: column; 
@@ -210,6 +213,7 @@ main .profile-description button:hover{
 }
 
 .goal{
+    width: 100%;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -254,8 +258,13 @@ main .profile-description button:hover{
     border: 1px solid #f8f5f5;
     border-radius: 10px;box-shadow: 2px 5px 2px var(--primary-color);
     padding: 1.2rem;
+    transition: width 2s, height 2s, transform 2s;
 }
-
+.cards:hover{
+    width: 412px;
+    height: 400px;
+    transform: rotate(2deg);
+}
 .card-heading{
     text-align: center;
     font-size: 20px;
@@ -397,6 +406,23 @@ footer ul li a{
     font-size: 18px;
     font-weight: 500;
 }
+
+
+
+/* ANIMATION */
+
+.typed-cursor--blink {
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+
 
 
  /* Mobile at 600max */
