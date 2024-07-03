@@ -164,23 +164,18 @@
                 <li>Pharmacist</li>
                 <li>DevOps</li>
               </ul>
-              <h1>
-                Hello, I'm Blessed Akhigbe!
+              <h1 data-testid="slackDisplayName">
+                Hello, I'm Pharmakarios!
                 <br />
-                <span id="typed-text" data-testid="slackDisplayName"></span>
+                <span id="typed-text"></span>
                 <span
                   class="typed-cursor typed-cursor--blink"
                   aria-hidden="true"
                 ></span>
               </h1>
               <h3>Enthusiastic software developer interning at HNG</h3>
-              <p>
-                I am a passionate and dedicated software developer with a
-                profound understanding of web technologies. I have a keen eye
-                for design and a strong foundation in coding languages. I am
-                currently interning as a Frontend engineer at
-                <a href=" hng.tech/learn" data-testid="hngLink">HNG</a>.
-              </p>
+              <p data-testid="currentDay"></p>
+              <div id="current-time-date" data-testid="currentTimeUTC"></div>
               <button id="goal">Goals</button>
             </div>
             <!-- profile img -->
@@ -346,15 +341,15 @@
         <footer data-testid="footer-section">
           <p>© 2024 Blessed Akhigbe. All rights reserved.</p>
           <div class="links">
-            <a href="hng.tech/learn" data-testid="hng-link">HNG</a>
-            <a href="keyword.dog" data-testid="keyword-dog-link">Keyword Dog</a>
-            <a href="scrapeanyweb.site" data-testid="scrapeanyweb-link"
+            <a href="hng.tech/learn" data-testid="hngLink">HNG</a>
+            <a href="keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+            <a href="scrapeanyweb.site" data-testid="scrapeanywebLink"
               >Scrape Any Web</a
             >
           </div>
           <div
             id="current-time-date"
-            data-testid="currentTimeUTC current-Day"
+            data-testid="currentTimeUTC currentDay"
           ></div>
           <ul>
             <li>
