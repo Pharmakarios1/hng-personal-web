@@ -159,7 +159,7 @@ main .profile-description{
     flex-direction: column;
     padding-left: 1.5rem;
     gap: .6rem;
-    width: 40%;
+    width: 50%;
 }
 main .profile-description ul{
     font-size: 18px;
@@ -185,7 +185,7 @@ main .profile-description ul li{
     
 }
 main .profile-description h1{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     
 }
@@ -195,7 +195,7 @@ main .profile-description h1 span{
 main .profile-description p{
     margin-top: 1rem;
     font-size: 16px;
-    width: 100%;
+    width: 70%;
 }
 /* #typed-text{
     color: red;
