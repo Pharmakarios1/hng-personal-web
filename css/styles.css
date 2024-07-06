@@ -459,18 +459,18 @@ footer ul li a{
 
  /* Mobile at 600max */
 @media (max-width: 600px) {
-
     .menu .mobile-menu i{
         display: block;
-        margin-right: 2rem;
+        color: var(--primary-color);
+        margin-right: 3rem;
     }
     .menu .side-menu{
         position: absolute;
         top: 2rem;
-        right: 1rem;
+        right: 2rem;
     }
     nav{
-        background-color:var(--secondary-color);
+        background-color:var(--primary-color);
         position: absolute;
         top: 6.3rem;
         left: -100rem;
